@@ -12,6 +12,15 @@ function sayHello(name) {
         return "Hello, World!"
     }
 }
- function isFive(num) {
+
+function isFive(num) {
     return Number(num) === 5
- }
+}
+
+function isEven(num1) {
+    return num1 % 2 === 0
+}
+
+function isVowel(letter) {
+    return
+}
