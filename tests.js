@@ -42,10 +42,17 @@ describe('sayHello', function() {
         expect(sayHello(2.3)).toBe("Hello, World!")
         expect(sayHello("5")).toBe("Hello, World!")
         expect(sayHello([])).toBe("Hello, World!")
-
-
-
-
     });
 });
 
+describe("isFive", function () {
+    it('should be a defined function', function () {
+        expect(typeof isFive).toBe("function")
+    });
+    it('should return true when passed 5', function () {
+        expect(isFive(5)).toBe(true)
+    });
+    it('should return false when passed anything other than 5', function () {
+        expect(isFive()).toBe(false)
+    });
+});
