@@ -4,5 +4,11 @@ function helloWorld() {
 }
 
 function sayHello(name) {
-    return "Hello, " + name + "!"
+    if (typeof name === "boolean" ) {
+        return "Hello, World!"
+    } else if (typeof name === "string" && isNaN(Number(name) && name.length > 0)) {
+        return "Hello, " + name + "!"
+    } else {
+        return "Hello, World!"
+    }
 }
