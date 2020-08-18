@@ -97,7 +97,7 @@ describe("isVowel", function () {
     it('should return false when passed "banana"', function () {
         expect(isVowel("banana")).toBe(false)
     });
-    it('should return false when letter is not a vowel', function () {
+    it('should return false when passed nothing', function () {
         expect(isVowel()).toBe(false)
     });
 });
